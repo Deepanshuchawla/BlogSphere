@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogSphere</title>
+    <link href="styles/post.css" rel="stylesheet" />
+</head>
+<body>
+    <%- include('partial/header.ejs') %>
+    <div class="main">
+        <div class="body">
+            <h1>Create Post</h1>
+            <div class="main-content">
+                <form action="/submit" method="post">
+                    <!-- <label for="header">Title Of the Blog</label> -->
+                    <input type="text" name="header" placeholder="Title Of the Blog" class="head" required/>
+                    <!-- <label for="content">Content of the Blog</label> -->
+                    <textarea name="content" placeholder="Content of the Blog" class="content" required></textarea>
+                    <div class="text-center">
+                        <a href="/"><button class="size">Create Post</button></a>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

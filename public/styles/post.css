@@ -1,0 +1,67 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    /* background-color: #9f623f; */
+}
+
+.main{
+    background-color: #9f623f;
+    height: calc(100vh - 75px); 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+}
+
+.body{
+    width: 60%;
+    background-color: bisque;
+    text-align: center;
+    height: 600px;
+    border-radius: 15px;
+    padding: 20px;
+}
+h1{
+    margin-bottom: 20px;
+}
+input.head {
+    width: 90%; /* Adjust width as needed */
+    background-color: #f0f0f0; /* Change background color */
+    border: 1px solid #ccc; /* Add border */
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Add border radius */
+    margin-bottom: 15px;
+}
+
+
+input.head::placeholder {
+    color: #999; /* Change placeholder text color */
+}
+
+textarea.content {
+    width: 90%; /* Change width to 90% */
+    height: 350px; /* Change height to 350px */
+    line-height: 1.2; /* Set line height to a reasonable value */
+    background-color: #f0f0f0; /* Change background color */
+    border: 1px solid #ccc; /* Add border */
+    padding: 10px; /* Add padding */
+    border-radius: 5px; /* Add border radius */
+    vertical-align: top; /* Align text to the top */
+    margin-bottom: 20px;
+}
+
+textarea.content::placeholder {
+    color: #999; /* Change placeholder text color */
+}
+
+button{
+    height: 30px;
+    width: 90%;
+    border-radius: 30px;
+    border: none;
+    background-color: #dea66e;
+    margin-bottom: 10px;
+}
+
+

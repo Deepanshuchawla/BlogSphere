@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogSphere</title>
+    <link href="/styles/main.css" rel="stylesheet" />
+</head>
+<body>
+    <%- include('partial/header.ejs') %>
+
+    <div class="main">
+        <div class="center-content" id="centerContent">
+            <div class="blog">
+                <% for(var i=0;i<content.length;i++) { %>
+                    <div class="date">
+                        <%= formattedDateTime %>
+                    </div>
+                    <h1><%= title[i] %></h1>
+                    <p><%= content[i] %></p>
+                    <br />
+                <% } %>
+            </div>
+        </div>
+        <div class="side-content">
+            <div class="text-center">
+                <a href="/create"><button class="size">Create Post</button></a>
+            </div>
+            <% for(var i=0;i<title.length;i++) { %>
+                <%= title[i] %>
+                <br />
+                <br />
+            <% } %>
+        </div>
+    </div>
+</body>
+</html>
